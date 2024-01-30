@@ -10,14 +10,14 @@ export type Theme = {
 };
 
 const temaDark = {
-  corPrimaria: '#fff',
-  corSecundaria: '#eee',
-  corFundo: '#282a35',
-  corCardBorda: '#c1c1c1',
-  corCardFundo: '#282a35',
-  corBotao: '#fff',
-  corBotaoTexto: '#282a35',
-  corBotaoTextoSecundaria: '#282a35',
+  corPrimaria: '#e0e0e0',
+  corSecundaria: '#cacaca',
+  corFundo: '#121212',
+  corCardBorda: '#333',
+  corCardFundo: '#1e1e1e',
+  corBotao: '#5b8def',
+  corBotaoTexto: '#fff',
+  corBotaoTextoSecundaria: '#121212',
 };
 
 export default temaDark;
