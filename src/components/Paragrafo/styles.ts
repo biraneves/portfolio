@@ -6,6 +6,10 @@ export const P = styled.p<Props>`
   line-height: 22px;
   color: ${(props) =>
     props.tipo === 'principal'
-      ? 'var(--cor-primaria)'
-      : 'var(--cor-secundaria)'};
+      ? props.theme.corPrimaria
+      : props.theme.corSecundaria};
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: ${(props) => (props.tipo === 'secundario' ? '0' : '24px')};
+  }
 `;

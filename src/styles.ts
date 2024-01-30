@@ -1,14 +1,10 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+import { Theme } from './themes/dark';
+
 const EstiloGlobal = createGlobalStyle`
   :root {
     --font-base: 'Inter', sans-serif;
-    --cor-primaria: #282a35;
-    --cor-secundaria: #949494;
-    --cor-card-borda: #c1c1c1;
-    --cor-botao: #4476bf;
-    --cor-botao-texto: #fff;
-    --cor-botao-texto-secundaria: #eee;
   }
 
   * {
@@ -19,6 +15,7 @@ const EstiloGlobal = createGlobalStyle`
   }
 
   body {
+    background-color: ${(props) => (props.theme as Theme).corFundo};
     padding-top: 80px;
     padding-bottom: 40px;
 

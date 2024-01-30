@@ -7,8 +7,8 @@ export const Descricao = styled(P)`
 `;
 
 export const BotaoTema = styled.button`
-  background-color: var(--cor-primaria);
-  color: var(--cor-botao-texto-secundaria);
+  background-color: ${(props) => props.theme.corPrimaria};
+  color: ${(props) => props.theme.corBotaoTextoSecundaria};
   padding: 8px;
   border: none;
   border-radius: 12px;
@@ -20,4 +20,9 @@ export const SidebarContainer = styled.div`
   position: sticky;
   top: 80px;
   left: 0;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+    text-align: center;
+  }
 `;

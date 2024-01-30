@@ -11,8 +11,14 @@ export const GithubSecao = styled.div`
 
   @media screen and (max-width: 767px) {
     margin: 0;
+    margin-bottom: 40px;
     display: block;
     width: 100%;
     height: auto;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
   }
 `;
