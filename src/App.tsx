@@ -7,10 +7,14 @@ import Projetos from './containers/Projetos';
 import Banner from './containers/Banner';
 import temaLight from './themes/light';
 import temaDark from './themes/dark';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
   const [temaDarkAtivo, setTemaDarkAtivo] = useState(false);
+
+  useEffect(() => {
+    setTemaDarkAtivo(window.matchMedia('(prefers-color-scheme: dark)').matches);
+  }, []);
 
   const trocaTema: () => void = () => {
     setTemaDarkAtivo(!temaDarkAtivo);
