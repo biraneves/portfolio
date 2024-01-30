@@ -5,12 +5,16 @@ const EstiloGlobal = createGlobalStyle`
     --font-base: 'Inter', sans-serif;
     --cor-primaria: #282a35;
     --cor-secundaria: #949494;
+    --cor-card-borda: #c1c1c1;
+    --cor-botao: #4476bf;
+    --cor-botao-texto: #fff;
   }
 
   * {
     margin: 0;
     padding: 0;
     font-family: var(--font-base);
+    list-style-type: none;
   }
 
   body {
