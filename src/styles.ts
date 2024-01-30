@@ -8,6 +8,7 @@ const EstiloGlobal = createGlobalStyle`
     --cor-card-borda: #c1c1c1;
     --cor-botao: #4476bf;
     --cor-botao-texto: #fff;
+    --cor-botao-texto-secundaria: #eee;
   }
 
   * {
@@ -19,6 +20,7 @@ const EstiloGlobal = createGlobalStyle`
 
   body {
     padding-top: 80px;
+    padding-bottom: 40px;
 
     @media screen and (max-width: 767px) {
       padding-top: 32px;
@@ -33,10 +35,6 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 128px auto;
   column-gap: 56px;
-
-  img {
-    max-width: 100%;
-  }
 
   @media screen and (max-width: 767px) {
     max-width: 80%;
