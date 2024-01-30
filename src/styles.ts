@@ -15,6 +15,10 @@ const EstiloGlobal = createGlobalStyle`
 
   body {
     padding-top: 80px;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 32px;
+    }
   }
 `;
 
@@ -28,6 +32,11 @@ export const Container = styled.div`
 
   img {
     max-width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 80%;
+    display: block;
   }
 `;
 
